@@ -40,4 +40,14 @@ DATE_SUB(COLUMN, INTERVAL EXPRESSION UNIT)
 FORMAT(COLUMN, FORMAT_STRING)
 
 
+-- Using DATE_ADD or DATE_SUB and the following SQL
+
+SELECT NOW();
+
+-- Select your birthday by passing the result into the next item
+
+DATE_ADD(DATE_ADD(NOW(), INTERVAL 23 DAY), INTERVAL 5 MONTH) as BIRTHDAY_DATE
+
+
+
 
