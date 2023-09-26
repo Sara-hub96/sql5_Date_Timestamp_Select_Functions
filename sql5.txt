@@ -1,0 +1,43 @@
+-- permette di concatenare i valori presenti in due colonne ed assegnare loro un nuovo nome; 
+   
+CONCAT(COLUMN1, COLUMN2) AS ALIAS_NAME
+
+
+-- utilizzati rispettivamente per cambiare tutti i valori delle stringhe in minuscolo e maiuscolo
+
+LOWER(COLUMN)
+UPPER(COLUMN)
+
+
+-- utilizzato per pulire ed ordinare le strighe, rivuove spazi bianchi o i caratteri indicati dove speficicato
+
+TRIM(COLUMN)
+
+
+-- serve a calcolare la lunghezza delle stringhe
+
+LENGTH(COLUMN)
+
+
+-- utilizzato per estrarre una parte di stringa dato un indice di riferimento
+
+SUBSTRING(COLUMN, START, LENGTH)
+
+
+-- utilizzato per arrotondare i numeri
+
+ROUND(COLUMN, DECIMAL_PLACES)
+
+
+-- utilizzati rispettivamente per aggiungere o sottrarre un intervallo di tempo ad un valore di tipo data
+
+DATE_ADD(COLUMN, INTERVAL EXPRESSION UNIT)
+DATE_SUB(COLUMN, INTERVAL EXPRESSION UNIT)
+
+
+-- utilizzato per formattare i dati di una colonna secondo le indicazioni della nostra stringa di formattazione
+
+FORMAT(COLUMN, FORMAT_STRING)
+
+
+
